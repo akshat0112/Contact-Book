@@ -1,0 +1,58 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<meta charset="utf-8">
+		<title>Search Contact</title>
+		<meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+		<!-- MATERIAL DESIGN ICONIC FONT -->
+		<link rel="stylesheet" href="fonts/material-design-iconic-font/css/material-design-iconic-font.min.css">
+		
+		<!-- STYLE CSS -->
+		<link rel="stylesheet" href="static/css/style.css">
+		<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.0/jquery.min.js"></script>
+	</head>
+	<script>
+		$("button").click(function()
+		{
+  			$.get("http://127.0.0.1:5000/options", osearch(data, status){
+    		alert(data + "\nStatus: " + status);
+  			})
+		});
+	</script>
+	<body>
+		<form name="Search form" method="POST">
+		<div class="wrapper">
+			<div class="inner">
+				<form action="http://127.0.0.1:5000/options">
+					<h3>Search Contact</h3>
+					<label class="form-group">
+						<input type="text" class="form-control" name="name" >
+						<span>Enter the Name</span>
+						<span class="border"></span>
+					</label>
+					<p>or Email-address</p>
+					<label class="form-group">
+						<input type="text" class="form-control" name="email"  >
+						<span for="">Email-address</span>
+						<span class="border"></span>
+					</label>
+					
+					<button>Submit 
+						<i class="zmdi zmdi-arrow-right"></i>
+					</button>
+				</form>
+			</div>
+		</div>
+		
+	</body><!-- This templates was made by Colorlib (https://colorlib.com) -->
+	<script>
+		$("button").click(function()
+		{
+  			$.get("http://127.0.0.1:5000/options", osearch(data, status){
+    		alert(data + "\nStatus: " + status);
+  			})
+		});
+	</script>
+
+</html>
