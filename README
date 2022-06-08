@@ -1,2 +1,4 @@
 Contact Book is created using Flask framework , Python , MongoDB database.
 For using it just the download the folders in the same manner and it should work.
+after downloading the folders , in command prompt or VS code terminal type "python options.py" it should run on the local server : http://127.0.0.1:5000 
+Now just paste this URL : http://127.0.0.1:5000 in your browser and the webpage should option.
